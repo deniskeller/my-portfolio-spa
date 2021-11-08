@@ -9,59 +9,50 @@ const Navbar: React.FC = () => {
   const router = useRouter();
   const { t } = useTranslation('common');
 
+  const links = [
+    {
+      href: '/',
+      title: 'home',
+    },
+    {
+      href: '/about',
+      title: 'about',
+    },
+    {
+      href: '/resume',
+      title: 'resume',
+    },
+    {
+      href: '/portfolio',
+      title: 'portfolio',
+    },
+    {
+      href: '/contacts',
+      title: 'contacts',
+    },
+  ];
+
   return (
     <div className={styles.bg}>
       <div>
         {/* <div className=''>Denis Keller</div> */}
         <div className=''>
           <ul>
-            <li>
-              <Link href={'/'}>
-                <a className={router.pathname === '/' ? styles.active : ''}>
-                  {t('menu.home')}
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href={'/about'}>
-                <a
-                  className={router.pathname === '/about' ? styles.active : ''}
-                >
-                  {t('menu.about')}
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href={'/resume'}>
-                <a
-                  className={router.pathname === '/resume' ? styles.active : ''}
-                >
-                  {t('menu.resume')}
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href={'/portfolio'}>
-                <a
-                  className={
-                    router.pathname === '/portfolio' ? styles.active : ''
-                  }
-                >
-                  {t('menu.portfolio')}
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href={'/contacts'}>
-                <a
-                  className={
-                    router.pathname === '/contacts' ? styles.active : ''
-                  }
-                >
-                  {t('menu.contact')}
-                </a>
-              </Link>
-            </li>
+            {links.map((link) => {
+              return (
+                <li>
+                  <Link href={link.href}>
+                    <a
+                      className={
+                        router.pathname === link.href ? styles.active : ''
+                      }
+                    >
+                      {t(`${'menu.' + link.title}`)}
+                    </a>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className={''}>
