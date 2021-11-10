@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Main: React.FC<Props> = ({ children, className }) => (
-  <div className=''>{children}</div>
+  <div className={className}>{children}</div>
 );
 
 export default Main;

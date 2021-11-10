@@ -4,8 +4,14 @@ import { useRouter } from 'next/router';
 import { Trans, useTranslation } from 'next-i18next';
 
 import styles from './Navbar.module.scss';
+import BaseIcon from '@base/BaseIcon';
+import { ICONS_ENUM } from '@constants/icons';
 
-const Navbar: React.FC = () => {
+interface Props {
+  className?: string;
+}
+
+const Navbar: React.FC<Props> = ({ className }) => {
   const router = useRouter();
   const { t } = useTranslation('common');
 
@@ -33,9 +39,9 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className={styles.bg}>
+    <div className={styles.navbar}>
       <div>
-        {/* <div className=''>Denis Keller</div> */}
+        <BaseIcon icon={ICONS_ENUM.LOGO} viewBox='0 0 60 60' />
         <div className=''>
           <ul>
             {links.map((link) => {

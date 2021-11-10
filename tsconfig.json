@@ -6,6 +6,7 @@
       "@layouts/*": ["components/layouts/*"],
       "@base/*": ["components/base/*"],
       "@nav/*": ["components/nav/*"],
+      "@constants/*": ["constants/*"],
       "@view/*": ["view/*"],
       "@content/*": ["components/content/*"]
     },
