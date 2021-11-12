@@ -1,1 +1,1 @@
-export { default as BaseIcon } from './BaseIcon';
+export { default as BaseIcon } from './BaseIcon/BaseIcon';

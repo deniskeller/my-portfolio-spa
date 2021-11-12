@@ -4,8 +4,10 @@ import { useRouter } from 'next/router';
 import { Trans, useTranslation } from 'next-i18next';
 
 import styles from './Navbar.module.scss';
-import BaseIcon from '@base/BaseIcon';
-import { ICONS_ENUM } from '@constants/icons';
+import BaseIcon from '@base/BaseIcon/BaseIcon';
+import { ALL_ICONS } from '@constants/icons';
+import { useSelector } from 'react-redux';
+import { RootState } from 'store/reducers/rootReducer';
 
 interface Props {
   className?: string;
@@ -40,33 +42,38 @@ const Navbar: React.FC<Props> = ({ className }) => {
 
   return (
     <div className={styles.navbar}>
-      <div>
-        <BaseIcon icon={ICONS_ENUM.LOGO} viewBox='0 0 60 60' />
-        <div className=''>
-          <ul>
-            {links.map((link) => {
-              return (
-                <li>
-                  <Link href={link.href}>
-                    <a
-                      className={
-                        router.pathname === link.href ? styles.active : ''
-                      }
-                    >
-                      {t(`${'menu.' + link.title}`)}
-                    </a>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className={''}>
-          <p>
-            <Trans>{t('created.by')}</Trans>
-          </p>
-        </div>
+      {/* <div className={styles.navbar__desktop}> */}
+      <div className={styles.navbar__header}>
+        <BaseIcon
+          icon={ALL_ICONS.LOGO}
+          viewBox='0 0 60 60'
+          className={styles.navbar__logo}
+        />
+        <BaseIcon
+          icon={ALL_ICONS.MENU_OPEN}
+          viewBox='0 0 30 30'
+          className={styles.navbar__burger}
+        />
       </div>
+
+      <ul className={styles.navbar__nav}>
+        {links.map((link, index) => {
+          return (
+            <li key={index}>
+              <Link href={link.href}>
+                <a
+                  className={router.pathname === link.href ? styles.active : ''}
+                >
+                  {t(`${'menu.' + link.title}`)}
+                </a>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+      {/* </div> */}
+
+      {/* <div className={styles.navbar__mobile}></div> */}
     </div>
   );
 };

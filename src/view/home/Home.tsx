@@ -3,6 +3,8 @@ import React from 'react';
 // import { ICONS_ENUM } from '@constant/icons';
 import { useTranslation } from 'next-i18next';
 import styles from './Home.module.scss';
+import { BaseIcon } from '@base/index';
+import { ALL_ICONS } from '@constants/icons';
 
 interface Props {}
 
@@ -17,6 +19,12 @@ const Home: React.FC<Props> = () => {
         <div className=''>
           <h1 className=''>{t('name')}</h1>
           <p className=''>{t('description')}</p>
+
+          <BaseIcon
+            icon={ALL_ICONS.TELEGRAM}
+            viewBox='0 0 60 60'
+            className={styles.navbar__logo}
+          />
         </div>
       </div>
     </div>

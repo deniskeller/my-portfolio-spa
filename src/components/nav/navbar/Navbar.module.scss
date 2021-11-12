@@ -1,7 +1,62 @@
 .active {
-  color: red;
+  font-weight: bold;
+  color: $black;
 }
 
 .navbar {
-  background: #efe1bd;
+  // background: #efe1bd;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  // border-right: 3px solid #333;
+
+  &__header {
+    align-self: end;
+    @include ifmobile {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: em(100px);
+      align-items: center;
+      padding-right: em(20px);
+      padding-left: em(20px);
+    }
+  }
+
+  &__logo {
+    width: em(50px);
+    height: em(50px);
+    position: relative;
+    left: em(-30px);
+    margin-bottom: 30px;
+    @include ifmobile {
+      width: em(50px);
+      height: em(50px);
+      margin-bottom: 0px;
+      left: em(0px);
+    }
+  }
+
+  &__burger {
+    display: none;
+    width: em(30px);
+    height: em(30px);
+    justify-self: end;
+    @include ifmobile {
+      display: block;
+    }
+  }
+
+  &__nav {
+    align-self: start;
+    // width: em(160px);
+    @include ifmobile {
+      display: none;
+    }
+    li {
+      list-style: none;
+      letter-spacing: 2px;
+      font-size: em(18px);
+    }
+  }
 }

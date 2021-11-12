@@ -1,6 +1,6 @@
 import _ from 'lodash';
-
+import { othersIcons, OthersIcons } from './others';
 import { socialIcons, SocialIcons } from './social';
 
-export const ICONS_ENUM = _.assign({}, SocialIcons);
-export default _.assign({}, socialIcons);
+export const ALL_ICONS = _.assign({}, SocialIcons, OthersIcons);
+export default _.assign({}, socialIcons, othersIcons);
