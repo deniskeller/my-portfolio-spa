@@ -9,6 +9,7 @@ interface Props {
   viewBox?: string;
   className?: string;
   fill?: string;
+  onClick?: (e: React.SyntheticEvent) => void;
 }
 
 const BaseIcon: React.FC<Props> = ({
@@ -16,11 +17,13 @@ const BaseIcon: React.FC<Props> = ({
   viewBox = '0 0 30 30',
   className,
   fill = 'none',
+  onClick,
 }) => (
   <svg
     className={clsx(`${!className ? styles.default : ''}`, className)}
     viewBox={viewBox}
     fill={fill}
+    onClick={onClick}
   >
     {icons[icon]}
   </svg>

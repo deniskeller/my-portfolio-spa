@@ -1,27 +1,29 @@
 import {
-  IProductState,
-  ProductAction,
-  ProductActionTypes,
-} from '../products/actionTypes';
+  IModalState,
+  ModalAction,
+  ModalActionTypes,
+} from '../modals/actionTypes';
 
-export const initialState: IProductState = {
-  products: [],
-  loading: false,
-  error: null,
+export const initialState: IModalState = {
   isPopup: false,
   setPopupName: null,
 };
 
 export const modalReducer = (
-  state: IProductState = initialState,
-  action: ProductAction
-): IProductState => {
+  state: IModalState = initialState,
+  action: ModalAction
+): IModalState => {
   switch (action.type) {
-    case ProductActionTypes.FETCH_PRODUCTS:
+    case ModalActionTypes.IS_POPUP:
       return {
-        loading: true,
-        error: null,
-        products: [],
+        isPopup: true,
+        setPopupName: null,
+      };
+
+    case ModalActionTypes.SET_POPUP_NAME:
+      return {
+        isPopup: true,
+        setPopupName: action.payload,
       };
 
     default:
