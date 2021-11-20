@@ -1,0 +1,9 @@
+.li {
+  list-style: none;
+  letter-spacing: 2px;
+  font-size: em(18px);
+}
+.active {
+  font-weight: bold;
+  color: $black;
+}

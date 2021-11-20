@@ -23,7 +23,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           name='description'
           content='Hire an expert Frontend developer for your project. My name is Denis and I`m a freelancer. I work with javascript, RectJS, VueJS, HTML, CSS.'
         />
-        <title>Frontend Developer | Freelance | Javascript</title>
+        <title>Frontend Developer | Freelance</title>
       </Head>
       <Provider store={store}>
         <Component {...pageProps} />
