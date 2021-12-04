@@ -1,0 +1,14 @@
+.BaseContainer {
+  display: block;
+  min-height: 100vh;
+  padding: em(80px);
+  @include ifmobile {
+    padding: em(25px);
+  }
+}
+
+.ContentCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

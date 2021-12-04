@@ -86,7 +86,12 @@ const Navbar: React.FC<Props> = ({ className }) => {
       <ul className={styles.navbar__nav}>
         {links.map((link, index) => {
           return (
-            <NavbarLink href={link.href} title={link.title} index={index} />
+            <NavbarLink
+              href={link.href}
+              title={link.title}
+              index={index}
+              key={index}
+            />
           );
         })}
       </ul>
@@ -96,7 +101,12 @@ const Navbar: React.FC<Props> = ({ className }) => {
         <ul>
           {links.map((link, index) => {
             return (
-              <NavbarLink href={link.href} title={link.title} index={index} />
+              <NavbarLink
+                href={link.href}
+                title={link.title}
+                index={index}
+                key={index}
+              />
             );
           })}
         </ul>

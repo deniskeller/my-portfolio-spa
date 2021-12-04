@@ -31,13 +31,13 @@
   // border-radius: 30px;
 }
 .BasePopup_close {
-  width: 30px;
-  height: 30px;
+  width: em(30px);
+  height: em(30px);
   position: absolute;
   // top: -55px;
   // right: 0;
-  top: 30px;
-  right: 15px;
+  top: em(30px);
+  right: em(15px);
   cursor: pointer;
 }
 
