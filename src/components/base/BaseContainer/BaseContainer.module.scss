@@ -1,6 +1,6 @@
 .BaseContainer {
   display: block;
-  min-height: 100vh;
+  min-height: 100%;
   padding: em(80px);
   @include ifmobile {
     padding: em(25px);

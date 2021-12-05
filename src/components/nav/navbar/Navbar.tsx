@@ -110,7 +110,7 @@ const Navbar: React.FC<Props> = ({ className }) => {
             );
           })}
         </ul>
-        <div className=''>
+        {/* <div className=''>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
           mollitia atque nemo dolor iure incidunt voluptates iste eos obcaecati
           consequuntur et alias, nam nobis amet illo, dolore aperiam quae enim
@@ -122,7 +122,7 @@ const Navbar: React.FC<Props> = ({ className }) => {
           animi inventore amet, nesciunt nostrum possimus ea sapiente facere
           vitae esse. Quod repudiandae expedita quos, excepturi quam nulla?
           Optio est soluta velit dignissimos labore ea.
-        </div>
+        </div> */}
       </BasePopup>
 
       {/* <div className={styles.navbar__mobile}></div> */}

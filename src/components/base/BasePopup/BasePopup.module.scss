@@ -21,7 +21,9 @@
   // width: 290px;
   // min-height: auto;
   width: 100%;
-  height: auto;
+  // min-height: 100vh;
+  // height: auto;
+  min-height: inherit;
   padding: 90px 20px 40px;
   position: relative;
   // display: flex;

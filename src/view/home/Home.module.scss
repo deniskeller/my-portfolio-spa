@@ -2,4 +2,60 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  @include ifmobile {
+    flex-direction: column;
+  }
+}
+
+.Photo {
+  width: em(300px);
+  height: em(300px);
+  border-radius: 50%;
+  border: 10px solid $white;
+  box-shadow: 2px 6px 15px rgb(0 0 0 / 25%);
+  box-sizing: content-box;
+  background-image: url('/images/others/myphoto.png');
+  background-size: cover;
+  @include ifdesktop {
+    margin-right: em(40px);
+  }
+  @include ifmobile {
+    width: em(200px);
+    height: em(200px);
+    margin-bottom: em(20px);
+  }
+}
+
+.Userinfo {
+  @include ifmobile {
+    text-align: center;
+  }
+}
+
+.Name {
+  font-size: em(36px);
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.Description {
+  font-size: em(18px);
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.Social {
+  display: flex;
+}
+
+.Social__icon {
+  margin-right: 15px;
+  width: em(30px);
+  height: em(30px);
+  cursor: pointer;
+}
+
+.Social__icon__vk {
+  width: em(35px);
+  height: em(30px);
 }
