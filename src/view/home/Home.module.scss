@@ -33,29 +33,27 @@
 }
 
 .Name {
-  font-size: em(36px);
-  line-height: 32px;
+  font-size: em(42px);
+  line-height: 100%;
   margin-bottom: 10px;
 }
 
 .Description {
   font-size: em(18px);
-  line-height: 18px;
+  line-height: 100%;
+  color: $grey;
   margin-bottom: 20px;
 }
 
 .Social {
-  display: flex;
+  // display: flex;
 }
 
 .Social__icon {
   margin-right: 15px;
-  width: em(30px);
-  height: em(30px);
+  height: em(20px);
   cursor: pointer;
-}
-
-.Social__icon__vk {
-  width: em(35px);
-  height: em(30px);
+  &:hover path {
+    fill: $blue;
+  }
 }
