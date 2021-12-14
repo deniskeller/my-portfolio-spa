@@ -13,10 +13,12 @@ const About: React.FC<Props> = () => {
     <BaseContainer>
       <p className={styles.Description}>{t('description')}</p>
       <div className={styles.Skills}>
-        <h2 className={styles.Skills__title}>Технологии</h2>
+        <h2 className={styles.Skills__title}>{t('title')}</h2>
         <div className={styles.Skills__content}>
           <div className=''>
-            <h3 className={styles.Skills__subtitle}>которыми владею:</h3>
+            <h3 className={styles.Skills__subtitle}>
+              {t('subtitle_comfort')}:
+            </h3>
             <ul className={styles.Skills__list}>
               {technologies.comfort.map((tech, index) => (
                 <li key={index} className={styles.Skills__item}>
@@ -26,7 +28,9 @@ const About: React.FC<Props> = () => {
             </ul>
           </div>
           <div className=''>
-            <h3 className={styles.Skills__subtitle}>с которыми знаком:</h3>
+            <h3 className={styles.Skills__subtitle}>
+              {t('subtitle_experience')}:
+            </h3>
             <ul className={styles.Skills__list}>
               {technologies.experience.map((tech, index) => (
                 <li key={index} className={styles.Skills__item}>
@@ -39,7 +43,7 @@ const About: React.FC<Props> = () => {
       </div>
       <BaseButton>
         <a href='/resume/resume.pdf' download>
-          Скачать резюме
+          {t('btn_title')}
         </a>
       </BaseButton>
     </BaseContainer>
