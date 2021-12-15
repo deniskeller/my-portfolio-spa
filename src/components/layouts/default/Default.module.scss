@@ -1,9 +1,9 @@
 .content {
-  display: grid;
-  grid-template-columns: em(300px) 1fr;
-  min-height: 100vh;
-  @include ifmobile {
-    grid-template-columns: 1fr;
-    grid-template-rows: em(100px) 1fr;
-  }
+  // display: grid;
+  // grid-template-columns: em(300px) 1fr;
+  // min-height: 100vh;
+  // @include ifmobile {
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: em(100px) 1fr;
+  // }
 }

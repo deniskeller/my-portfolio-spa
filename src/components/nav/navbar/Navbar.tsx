@@ -47,7 +47,6 @@ const Navbar: React.FC<Props> = ({ className }) => {
 
   const lek = useSelector((state: RootState) => state.modal.setPopupName);
   // console.log('isPopup: ', isPopup);
-  console.log('setPopupName: ', lek);
 
   const [modal, setModal] = React.useState(false);
   const menuOpen = () => {

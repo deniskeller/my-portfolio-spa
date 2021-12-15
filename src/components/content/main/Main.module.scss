@@ -1,3 +1,5 @@
-.bg {
+.Main {
   background: $light_grey;
+  margin-left: em($navbar-width);
+  min-height: 100vh;
 }

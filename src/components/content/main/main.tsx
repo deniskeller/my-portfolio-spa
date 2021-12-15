@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Main.module.scss';
 
 const Main: React.FC = ({ children }) => (
-  <div className={styles.bg}>{children}</div>
+  <div className={styles.Main}>{children}</div>
 );
 
 export default Main;

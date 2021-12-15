@@ -3,6 +3,10 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  width: em($navbar-width);
+  height: 100vh;
+  position: fixed;
+
   // border-right: 3px solid #333;
 
   &__header {

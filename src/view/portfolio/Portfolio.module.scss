@@ -1,0 +1,10 @@
+.Portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: em(20px);
+  // grid-row-gap: em(10px);
+  // @include ifmobile {
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: em(100px) 1fr;
+  // }
+}
