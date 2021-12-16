@@ -1,17 +1,71 @@
 .PortfolioCard {
-  width: em(300px);
-  height: em(250px);
-  // background: red;
+  width: 100%;
+  min-width: em(300px);
+  height: 100%;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
   justify-self: center;
+  box-shadow: 2px 6px 15px rgb(0 0 0 / 25%);
+  overflow: hidden;
+  position: relative;
 
   &:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+  }
+
+  &__content {
+    padding: 0 em(20px) em(20px);
+  }
+
+  &__img {
+    width: 100%;
+    min-height: em(200px);
+    overflow: hidden;
+    margin-bottom: em(20px);
+    position: relative;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: em(10px);
+    font-size: em(24px);
+    line-height: 100%;
+    color: $turquoise;
+  }
+
+  &__menu {
+    right: 0;
+    top: 30%;
+  }
+  &__menu,
+  &__menu::before,
+  &__menu::after {
+    width: em(3px);
+    height: em(3px);
+    border-radius: 50%;
+    background: $turquoise;
+    position: absolute;
+  }
+
+  &__menu::before {
+    content: '';
+    right: 0;
+    bottom: em(5px);
+  }
+
+  &__menu::after {
+    content: '';
+    right: 0;
+    bottom: em(-5px);
+  }
+
+  &__descraption {
+    font-size: em(16px);
+    line-height: 120%;
   }
 }

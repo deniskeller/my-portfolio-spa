@@ -2,4 +2,7 @@
   background: $light_grey;
   margin-left: em($navbar-width);
   min-height: 100vh;
+  @include ifmobile {
+    margin-left: 0;
+  }
 }

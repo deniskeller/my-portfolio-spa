@@ -1,13 +1,17 @@
 .navbar {
-  // background: #efe1bd;
   display: grid;
   justify-items: center;
   align-items: center;
   width: em($navbar-width);
   height: 100vh;
   position: fixed;
+  z-index: 1000;
+  @extend %background-gradient;
 
-  // border-right: 3px solid #333;
+  @include ifmobile {
+    width: 100%;
+    height: em($navbar-height);
+  }
 
   &__header {
     align-self: end;

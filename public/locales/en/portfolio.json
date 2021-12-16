@@ -1,6 +1,6 @@
 {
-  "topic.title": "Portfolio",
   "project.title": "Title: ",
   "project.tech": "Technologies used",
-  "project.description": "Project description"
+  "project.description": "Project description",
+  "project.scope_of_work": "Scope of work"
 }

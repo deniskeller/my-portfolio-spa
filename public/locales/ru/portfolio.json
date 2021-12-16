@@ -1,6 +1,6 @@
 {
-  "topic.title": "Портфолио",
   "project.title": "Название: ",
   "project.tech": "Используемые технологии",
-  "project.description": "Описание проекта"
+  "project.description": "Описание проекта",
+  "project.scope_of_work": "Фронт работ"
 }

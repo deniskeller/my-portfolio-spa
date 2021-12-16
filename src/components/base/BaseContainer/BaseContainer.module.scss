@@ -4,6 +4,7 @@
   padding: em(80px);
   @include ifmobile {
     padding: em(25px);
+    padding-top: em($navbar-height + 25px);
   }
 }
 

@@ -1,15 +1,14 @@
 export const portfolioWorks = [
   {
     id: 1,
-    en: {
-      title: 'Holderlab',
-      description: 'An exchange for creating a cryptocurrency portfolio',
-      scope_of_work: 'Scope of work',
+    title: 'Holderlab',
+    description: {
+      en: 'An exchange for creating a cryptocurrency portfolio',
+      ru: 'Биржа для создания криптовалютного портфеля1111',
     },
-    ru: {
-      title: 'Holderlab',
-      description: 'Биржа для создания криптовалютного портфеля',
-      scope_of_work: 'Фронт работ',
+    scope_of_work: {
+      en: 'Scope of work',
+      ru: 'Фронт работ',
     },
     technologies: ['HTML5/CSS3', 'Vue JS', 'Nuxt Js'],
     images: [
@@ -20,15 +19,14 @@ export const portfolioWorks = [
   },
   {
     id: 2,
-    en: {
-      title: 'alfacoins',
-      description: 'An exchange for creating a cryptocurrency portfolio',
-      scope_of_work: 'Scope of work',
+    title: 'Alfacoins',
+    description: {
+      en: 'An exchange for creating a cryptocurrency portfolio',
+      ru: 'Биржа для создания криптовалютного портфеля2222',
     },
-    ru: {
-      title: 'alfacoins',
-      description: 'Биржа для создания криптовалютного портфеля',
-      scope_of_work: 'Фронт работ',
+    scope_of_work: {
+      en: 'Scope of work',
+      ru: 'Фронт работ',
     },
     technologies: ['HTML5/CSS3', 'Vue JS', 'Nuxt Js'],
     images: [
@@ -39,15 +37,14 @@ export const portfolioWorks = [
   },
   {
     id: 3,
-    en: {
-      title: 'bodyshop',
-      description: 'An exchange for creating a cryptocurrency portfolio',
-      scope_of_work: 'Scope of work',
+    title: 'Bodyshop',
+    description: {
+      en: 'An exchange for creating a cryptocurrency portfolio',
+      ru: 'Биржа для создания криптовалютного портфеля3333',
     },
-    ru: {
-      title: 'bodyshop',
-      description: 'Биржа для создания криптовалютного портфеля',
-      scope_of_work: 'Фронт работ',
+    scope_of_work: {
+      en: 'Scope of work',
+      ru: 'Фронт работ',
     },
     technologies: ['HTML5/CSS3', 'Vue JS', 'Nuxt Js'],
     images: [
@@ -58,15 +55,14 @@ export const portfolioWorks = [
   },
   {
     id: 4,
-    en: {
-      title: 'babyclub',
-      description: 'An exchange for creating a cryptocurrency portfolio',
-      scope_of_work: 'Scope of work',
+    title: 'Беби-клуб',
+    description: {
+      en: 'An exchange for creating a cryptocurrency portfolio',
+      ru: 'Биржа для создания криптовалютного портфеля4444',
     },
-    ru: {
-      title: 'babyclub',
-      description: 'Биржа для создания криптовалютного портфеля',
-      scope_of_work: 'Фронт работ',
+    scope_of_work: {
+      en: 'Scope of work',
+      ru: 'Фронт работ',
     },
     technologies: ['HTML5/CSS3', 'Vue JS', 'Nuxt Js'],
     images: [
