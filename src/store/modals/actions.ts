@@ -1,9 +1,14 @@
 import { Dispatch } from 'redux';
 import { ModalAction, ModalActionTypes } from './actionTypes';
 
-export const isPopup = (is_popup: boolean): ModalAction => {
+export const setPopup = (popup: string, id: number): ModalAction => {
+  // console.log('popup: ', popup);
+  // console.log('id: ', id);
   return {
-    type: ModalActionTypes.IS_POPUP,
-    payload: is_popup,
+    type: ModalActionTypes.SET_POPUP,
+    payload: {
+      popup: popup,
+      id: id,
+    },
   };
 };

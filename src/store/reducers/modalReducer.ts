@@ -1,4 +1,3 @@
-import { portfolioWorks } from '@constants/portfolio/portfolio';
 import {
   IModalState,
   ModalAction,
@@ -6,8 +5,8 @@ import {
 } from '../modals/actionTypes';
 
 export const initialState: IModalState = {
-  isPopup: false,
-  projects: portfolioWorks,
+  popup: '',
+  id: 0,
 };
 
 export const modalReducer = (
@@ -15,10 +14,11 @@ export const modalReducer = (
   action: ModalAction
 ): IModalState => {
   switch (action.type) {
-    case ModalActionTypes.IS_POPUP:
+    case ModalActionTypes.SET_POPUP:
       return {
-        isPopup: true,
-        projects: [],
+        ...state,
+        popup: action.payload.popup,
+        id: action.payload.id,
       };
 
     default:

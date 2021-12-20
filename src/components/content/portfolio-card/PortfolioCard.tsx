@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './PortfolioCard.module.scss';
 import { useTranslation } from 'next-i18next';
+import { setPopup } from 'store/modals/actions';
+import { useDispatch } from 'react-redux';
 
 interface Props {
   id: number;
@@ -11,12 +13,15 @@ interface Props {
 }
 
 const PortfolioCard: React.FC<Props> = ({ id, title, description, images }) => {
+  const dispatch = useDispatch();
   const {
     t,
     i18n: { language },
   } = useTranslation('portfolio');
 
-  const handleClick = () => console.log('id :' + id);
+  const handleClick = () => {
+    dispatch(setPopup('portfolio_card_modal', id));
+  };
 
   return (
     <div className={styles.PortfolioCard} onClick={handleClick}>

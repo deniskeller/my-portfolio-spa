@@ -1,15 +1,18 @@
 export interface IModalState {
-  isPopup: boolean;
-  projects: object[];
+  popup: string;
+  id: number;
 }
 
 export enum ModalActionTypes {
-  IS_POPUP = 'IS_POPUP',
+  SET_POPUP = 'SET_POPUP',
 }
 
-interface IIsPopup {
-  type: ModalActionTypes.IS_POPUP;
-  payload: Boolean;
+interface ISetPopup {
+  type: ModalActionTypes.SET_POPUP;
+  payload: {
+    popup: string;
+    id: number;
+  };
 }
 
-export type ModalAction = IIsPopup;
+export type ModalAction = ISetPopup;

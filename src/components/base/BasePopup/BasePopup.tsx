@@ -1,13 +1,22 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useRef, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setPopup } from 'store/modals/actions';
+import { RootState } from 'store/reducers/rootReducer';
 import styles from './BasePopup.module.scss';
 
 interface Props {
   children: ReactNode;
-  visible: Boolean;
-  setVisible: (value: boolean) => void;
+  className: string;
 }
 
-const BasePopup: React.FC<Props> = ({ children, visible, setVisible }) => {
+const BasePopup: React.FC<Props> = ({ children, className }) => {
+  const { popup, id } = useSelector((state: RootState) => state.modal);
+  const dispatch = useDispatch();
+  const thisClass = useRef<HTMLDivElement>(null);
+  const thisModal = useRef<HTMLDivElement>(null);
+
+  const [visible, setVisible] = useState(false);
+
   React.useEffect(() => {
     const className = 'overflow-hidden';
 
@@ -18,9 +27,41 @@ const BasePopup: React.FC<Props> = ({ children, visible, setVisible }) => {
     }
   }, [visible]);
 
+  // console.log('thisClass: ', thisClass.current);
+  React.useEffect(() => {
+    if (thisClass.current.classList.contains(popup)) {
+      showPopup();
+    }
+    if (!popup) {
+      hidePopup();
+    }
+  }, [popup, id]);
+
+  const keyUp = (e: React.KeyboardEvent<Element>) => {
+    if (e.keyCode == 27) {
+      hidePopup();
+    }
+  };
+
+  const showPopup = () => {
+    document.addEventListener('keyup', keyUp);
+    setVisible(true);
+  };
+
+  const hidePopup = () => {
+    document.removeEventListener('keyup', keyUp);
+    dispatch(setPopup('', 0));
+    setVisible(false);
+  };
+
   return (
-    <div className={` ${styles.BasePopup} ${visible ? styles.visible : ''}`}>
-      <div className={styles.BasePopup_content}>
+    <div
+      className={` ${styles.BasePopup} ${
+        visible ? styles.visible : ''
+      } ${className}`}
+      ref={thisClass}
+    >
+      <div className={styles.BasePopup_content} ref={thisModal}>
         <svg
           width='30'
           height='30'

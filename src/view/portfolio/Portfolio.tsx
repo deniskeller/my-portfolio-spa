@@ -34,7 +34,7 @@ const Portfolio: React.FC<Props> = () => {
           ))
         )}
       </div>
-      <PortfolioCardModal />
+      <PortfolioCardModal className='portfolio_card_modal' />
     </BaseContainer>
   );
 };
