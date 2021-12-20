@@ -7,10 +7,3 @@ export const isPopup = (is_popup: boolean): ModalAction => {
     payload: is_popup,
   };
 };
-
-export const setPopupName = (value: string): ModalAction => {
-  return {
-    type: ModalActionTypes.SET_POPUP_NAME,
-    payload: value,
-  };
-};
