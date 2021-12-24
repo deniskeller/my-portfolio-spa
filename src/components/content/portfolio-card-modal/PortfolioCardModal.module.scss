@@ -1,0 +1,49 @@
+.Title {
+  font-size: em(28px);
+  line-height: 100%;
+  margin-bottom: 30px;
+}
+
+.Subtitle {
+  font-size: em(18px);
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+
+.Description {
+  font-size: em(16px);
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.Slider {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.Slider__navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Navbar_left,
+.Navbar_right {
+  width: 24px;
+  height: 20px;
+  // position: absolute;
+}
+
+.Navbar_left {
+  left: 15px;
+  transform: rotate(180deg);
+}
+
+.Navbar_right {
+  right: 15px;
+}
+
+.disable {
+  pointer-events: none;
+  opacity: 0.3;
+}

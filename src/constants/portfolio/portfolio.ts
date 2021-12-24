@@ -13,8 +13,8 @@ export const portfolioWorks = [
     technologies: ['HTML5/CSS3', 'Vue JS', 'Nuxt Js'],
     images: [
       '/images/portfolio/holderlab.png',
-      '/images/portfolio/holderlab.png',
-      '/images/portfolio/holderlab.png',
+      '/images/portfolio/alfacoins.png',
+      '/images/portfolio/bodyshop.png',
     ],
   },
   {
