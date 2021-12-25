@@ -7,10 +7,18 @@ export const portfolioWorks = [
       ru: 'Биржа для создания криптовалютного портфеля1111',
     },
     scope_of_work: {
-      en: 'Scope of work',
-      ru: 'Фронт работ',
+      en: 'Layout / Front-end',
+      ru: 'Верстка / Фронтенд',
     },
-    technologies: ['HTML5/CSS3', 'Vue JS', 'Nuxt Js'],
+    technologies: [
+      'HTML5/CSS3',
+      'Vue JS',
+      'Nuxt Js',
+      'Vue JS',
+      'Nuxt Js',
+      'Vue JS',
+      'Nuxt Js',
+    ],
     images: [
       '/images/portfolio/holderlab.png',
       '/images/portfolio/alfacoins.png',

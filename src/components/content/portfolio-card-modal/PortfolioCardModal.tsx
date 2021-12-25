@@ -1,20 +1,19 @@
 import React from 'react';
 import styles from './PortfolioCardModal.module.scss';
-import { BasePopup } from '@base/index';
+import { BaseIcon, BasePopup } from '@base/index';
 import { useSelector } from 'react-redux';
 import { RootState } from 'store/reducers/rootReducer';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
+import { ALL_ICONS } from '@constants/icons';
 
 interface Props {
   className: string;
 }
 
 const PortfolioCardModal: React.FC<Props> = ({ className }) => {
-  const [currentProject, setCurrentProject] = React.useState({});
   const { id } = useSelector((state: RootState) => state.modal);
   const { projects } = useSelector((state: RootState) => state.project);
-  const setProject = projects.filter((project) => project.id == id);
 
   const work = projects[id - 1];
 
@@ -23,23 +22,14 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
     i18n: { language },
   } = useTranslation('portfolio');
 
-  React.useEffect(() => {
-    setCurrentProject(setProject[0]);
-  }, [id, projects]);
-
-  console.log('currentProject: ', currentProject);
-  console.log('work: ', work);
-
   const [page, setPage] = React.useState(1);
 
   const prevPage = () => {
     setPage(page - 1);
-    // console.log('page: ', page);
   };
 
   const nextPage = () => {
     setPage(page + 1);
-    // console.log('page: ', page);
   };
 
   const prevDisable = () => {
@@ -70,38 +60,33 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
         <>
           <h1 className={styles.Title}>{work.title}</h1>
 
-          <ul className={styles.Slider}>
+          <div className={styles.Slider__content}>
             <div className={styles.Slider__navbar}>
-              <span
+              <BaseIcon
+                icon={ALL_ICONS.ARROW}
                 className={` ${styles.Navbar_left} ${
                   prevDisable() ? styles.disable : ''
                 }`}
                 onClick={prevPage}
-              >
-                прев
-              </span>
-              <span
+              />
+
+              <BaseIcon
+                icon={ALL_ICONS.ARROW}
                 className={` ${styles.Navbar_right} ${
                   nextDisable() ? styles.disable : ''
                 }`}
                 onClick={nextPage}
-              >
-                некс
-              </span>
+              />
             </div>
 
-            {slideComputed(page).map((item, index) => (
-              <li className='' key={index}>
-                <Image
-                  width={200}
-                  height={200}
-                  src={item}
-                  // layout={'fill'}
-                  // alt={'Project image'}
-                />
-              </li>
-            ))}
-          </ul>
+            <ul className={styles.Slider}>
+              {slideComputed(page).map((item, index) => (
+                <li className='' key={index}>
+                  <Image src={item} layout={'fill'} alt={'Project image'} />
+                </li>
+              ))}
+            </ul>
+          </div>
 
           <h3 className={styles.Subtitle}>{t('project.description')}</h3>
 
@@ -109,13 +94,15 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
 
           <h3 className={styles.Subtitle}>{t('project.scope_of_work')}</h3>
 
-          <div className=''>{work.scope_of_work[language]}</div>
+          <div className={styles.Description}>
+            {work.scope_of_work[language]}
+          </div>
 
           <h3 className={styles.Subtitle}>{t('project.tech')}</h3>
 
-          <ul className=''>
+          <ul className={styles.TechnologiesList}>
             {work.technologies.map((item, index) => (
-              <li className='' key={index}>
+              <li className={styles.TechnologiesItem} key={index}>
                 {item}
               </li>
             ))}

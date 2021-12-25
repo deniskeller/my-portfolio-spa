@@ -7,43 +7,79 @@
 .Subtitle {
   font-size: em(18px);
   line-height: 100%;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .Description {
   font-size: em(16px);
   line-height: 120%;
-  margin-bottom: 20px;
+  color: $grey;
+}
+
+.Slider__content {
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .Slider {
-  margin-bottom: 30px;
-  position: relative;
+  list-style: none;
+  width: 100%;
+  height: em(500px);
+  @include ifmobile {
+    height: em(200px);
+  }
 }
 
 .Slider__navbar {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  position: absolute;
+  z-index: 10000;
+  top: calc(50% - 15px);
 }
 
 .Navbar_left,
 .Navbar_right {
-  width: 24px;
-  height: 20px;
-  // position: absolute;
+  width: em(34px);
+  height: em(50px);
+  cursor: pointer;
 }
 
 .Navbar_left {
-  left: 15px;
-  transform: rotate(180deg);
+  left: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .Navbar_right {
-  right: 15px;
+  right: 0;
 }
 
 .disable {
   pointer-events: none;
   opacity: 0.3;
+}
+
+.TechnologiesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.TechnologiesItem {
+  font-size: em(16px);
+  color: $grey;
+  list-style: none;
+  line-height: 100%;
+  min-width: em(30px);
+  background: $cian;
+  padding: em(8px) em(10px);
+  border-radius: 8px;
+  text-align: center;
+  margin-right: em(5px);
+  margin-bottom: em(5px);
 }
