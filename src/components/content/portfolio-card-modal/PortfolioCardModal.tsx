@@ -12,7 +12,7 @@ interface Props {
 }
 
 const PortfolioCardModal: React.FC<Props> = ({ className }) => {
-  const { id } = useSelector((state: RootState) => state.modal);
+  const { popup, id } = useSelector((state: RootState) => state.modal);
   const { projects } = useSelector((state: RootState) => state.project);
 
   const work = projects[id - 1];
@@ -54,6 +54,14 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
     return sliders;
   };
 
+  React.useEffect(() => {
+    return () => {
+      if (!popup) {
+        setPage(1);
+      }
+    };
+  }, [popup]);
+
   if (work) {
     return (
       <BasePopup className={className}>
@@ -67,6 +75,7 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
                 className={` ${styles.Navbar_left} ${
                   prevDisable() ? styles.disable : ''
                 }`}
+                viewBox='0 0 50 50'
                 onClick={prevPage}
               />
 
@@ -76,6 +85,7 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
                   nextDisable() ? styles.disable : ''
                 }`}
                 onClick={nextPage}
+                viewBox='0 0 50 50'
               />
             </div>
 
@@ -107,6 +117,31 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
               </li>
             ))}
           </ul>
+
+          <div className={styles.Social}>
+            <a
+              href={work.view.website}
+              target='_blank'
+              className={styles.SocialItem}
+            >
+              <BaseIcon
+                icon={ALL_ICONS.LINK}
+                viewBox='0 0 25 25'
+                className={` ${styles.SocialItemImage} ${styles.SocialItemImage__link}`}
+              />
+            </a>
+            <a
+              href={work.view.github}
+              target='_blank'
+              className={styles.SocialItem}
+            >
+              <BaseIcon
+                icon={ALL_ICONS.GITHUB}
+                viewBox='0 0 30 30'
+                className={styles.SocialItemImage}
+              />
+            </a>
+          </div>
         </>
       </BasePopup>
     );

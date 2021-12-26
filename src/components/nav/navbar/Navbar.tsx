@@ -15,10 +15,10 @@ const links = [
     href: '/about',
     title: 'about',
   },
-  {
-    href: '/resume',
-    title: 'resume',
-  },
+  // {
+  //   href: '/resume',
+  //   title: 'resume',
+  // },
   {
     href: '/portfolio',
     title: 'portfolio',

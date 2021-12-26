@@ -19,13 +19,17 @@
 
 .Slider__content {
   width: 100%;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .Slider {
   list-style: none;
   width: 100%;
+  position: relative;
   height: em(500px);
   @include ifmobile {
     height: em(200px);
@@ -38,24 +42,26 @@
   justify-content: space-between;
   position: absolute;
   z-index: 10000;
-  top: calc(50% - 15px);
+  top: calc(50% - em(25px));
+  height: em(50px);
 }
 
 .Navbar_left,
 .Navbar_right {
-  width: em(34px);
+  width: em(50px);
   height: em(50px);
   cursor: pointer;
+  position: absolute;
 }
 
 .Navbar_left {
   left: 0;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 
 .Navbar_right {
   right: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .disable {
@@ -68,6 +74,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
+  margin-bottom: 30px;
 }
 
 .TechnologiesItem {
@@ -82,4 +89,43 @@
   text-align: center;
   margin-right: em(5px);
   margin-bottom: em(5px);
+}
+
+.Social {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+}
+
+.SocialItem {
+  width: em(55px);
+  height: em(55px);
+  border-radius: 50%;
+  background: $light-brown;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: em(20px);
+  &:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.25),
+      0 4px 15px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.SocialItemImage {
+  width: em(25px);
+  height: em(25px);
+  path {
+    fill: $white;
+  }
+}
+
+.SocialItemImage__link {
+  path {
+    fill: none;
+    stroke: $white;
+  }
 }

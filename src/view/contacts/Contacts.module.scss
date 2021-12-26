@@ -1,0 +1,51 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: em(80px);
+  width: em(600px);
+  position: relative;
+  bottom: 0;
+  @include ifmobile {
+    width: 100%;
+    margin-top: em(30px);
+  }
+  .contact {
+    width: em(80px);
+    height: em(80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 5px solid $white;
+    border-radius: 50%;
+    text-decoration: none;
+    svg path {
+      fill: $black;
+      stroke: $black;
+    }
+    border-color: $black;
+    &:hover {
+      svg path {
+        fill: $blue;
+        stroke: $blue;
+      }
+      border-color: $blue;
+    }
+    svg {
+      width: em(30px);
+      height: em(30px);
+      @include ifmobile {
+        width: em(15px);
+        height: em(15px);
+      }
+    }
+
+    @include ifmobile {
+      width: em(30px);
+      height: em(30px);
+      border: 2px solid $black;
+    }
+  }
+}

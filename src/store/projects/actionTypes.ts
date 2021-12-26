@@ -1,17 +1,21 @@
-export interface IEn {
+export interface ITranslation {
   en: string;
   ru: string;
 }
 
-export interface IRu extends IEn {}
+export interface IView {
+  website: string;
+  github: string;
+}
 
 export interface IProjectItem {
   id: number;
   title: string;
-  description: IEn;
-  scope_of_work: IRu;
+  description: ITranslation;
+  scope_of_work: ITranslation;
   technologies: string[];
   images: string[];
+  view: IView;
 }
 
 export interface IProjectState {
