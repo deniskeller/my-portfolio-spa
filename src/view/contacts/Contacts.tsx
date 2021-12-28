@@ -14,6 +14,7 @@ const Contacts: React.FC<Props> = () => {
         <a
           href='https://telegram.me/denisb163'
           target='_blank'
+          rel="noopener noreferrer"
           className={styles.contact}
         >
           <svg
@@ -48,6 +49,7 @@ const Contacts: React.FC<Props> = () => {
         <a
           href='https://www.linkedin.com/in/denis-keller-8248691b1/'
           target='_blank'
+          rel="noopener noreferrer"
           className={styles.contact}
         >
           <svg
@@ -75,6 +77,7 @@ const Contacts: React.FC<Props> = () => {
         <a
           href='https://www.instagram.com/keller.js/'
           target='_blank'
+          rel="noopener noreferrer"
           className={styles.contact}
         >
           <svg
@@ -94,6 +97,7 @@ const Contacts: React.FC<Props> = () => {
         <a
           href='https://vk.com/id14286270'
           target='_blank'
+          rel="noopener noreferrer"
           className={styles.contact}
         >
           <svg
@@ -113,6 +117,7 @@ const Contacts: React.FC<Props> = () => {
         <a
           href='https://github.com/deniskeller'
           target='_blank'
+          rel="noopener noreferrer"
           className={styles.contact}
         >
           <svg

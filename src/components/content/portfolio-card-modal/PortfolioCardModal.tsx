@@ -124,6 +124,7 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
               href={work.view.website}
               target='_blank'
               className={styles.SocialItem}
+              rel="noopener noreferrer"
             >
               <BaseIcon
                 icon={ALL_ICONS.LINK}
@@ -135,6 +136,7 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
               href={work.view.github}
               target='_blank'
               className={styles.SocialItem}
+              rel="noopener noreferrer"
             >
               <BaseIcon
                 icon={ALL_ICONS.GITHUB}

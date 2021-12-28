@@ -20,7 +20,11 @@ const Home: React.FC<Props> = () => {
           <p className={styles.Description}>{t('description')}</p>
 
           <div className={styles.Social}>
-            <a target={'_blank'} href='https://www.instagram.com/keller.js/'>
+            <a
+              rel='noopener noreferrer'
+              target={'_blank'}
+              href='https://www.instagram.com/keller.js/'
+            >
               <BaseIcon
                 icon={ALL_ICONS.INSTAGRAM}
                 viewBox='0 0 30 30'
@@ -28,7 +32,11 @@ const Home: React.FC<Props> = () => {
               />
             </a>
 
-            <a target={'_blank'} href='https://vk.com/id14286270'>
+            <a
+              rel='noopener noreferrer'
+              target={'_blank'}
+              href='https://vk.com/id14286270'
+            >
               <BaseIcon
                 icon={ALL_ICONS.VK}
                 viewBox='0 0 35 25'
@@ -36,7 +44,11 @@ const Home: React.FC<Props> = () => {
               />
             </a>
 
-            <a target={'_blank'} href='https://github.com/deniskeller'>
+            <a
+              rel='noopener noreferrer'
+              target={'_blank'}
+              href='https://github.com/deniskeller'
+            >
               <BaseIcon
                 icon={ALL_ICONS.GITHUB}
                 viewBox='0 0 30 30'
@@ -45,6 +57,7 @@ const Home: React.FC<Props> = () => {
             </a>
 
             <a
+              rel='noopener noreferrer'
               target={'_blank'}
               href='https://www.linkedin.com/in/denis-keller-8248691b1/'
             >
