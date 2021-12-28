@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import styles from './PortfolioCardModal.module.scss';
 import { BaseIcon, BasePopup } from '@base/index';
