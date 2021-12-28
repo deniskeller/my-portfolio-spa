@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
