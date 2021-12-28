@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { ReactNode, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setPopup } from 'store/modals/actions';
