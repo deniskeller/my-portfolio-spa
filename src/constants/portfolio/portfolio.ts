@@ -294,4 +294,25 @@ export const portfolioWorks = [
       github: 'nda',
     },
   },
+  {
+    id: 14,
+    title: 'Портфолио веб-разработчика',
+    description: {
+      en: 'One page version of my portfolio',
+      ru: 'Одностраничный вариант моего портфолио',
+    },
+    scope_of_work: {
+      en: 'Design and layout',
+      ru: 'Дизайн и верстка',
+    },
+    technologies: ['HTML5/CSS3', 'Vanilla Js'],
+    images: [
+      '/images/portfolio/oldportfolio/oldportfolio1.png',
+      '/images/portfolio/oldportfolio/oldportfolio2.png',
+    ],
+    view: {
+      website: 'https://dkweb.vercel.app/',
+      github: 'https://github.com/deniskeller/my_portfolio',
+    },
+  },
 ];
