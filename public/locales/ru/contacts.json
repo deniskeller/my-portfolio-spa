@@ -1,3 +1,8 @@
 {
-  "contacts.title": "Контакты"
+  "contacts.question": "Нужен сайт? напишите мне",
+  "contacts.name": "Имя",
+  "contacts.btn_title": "Отправить",
+  "contacts.contact_me": "Или свяжитесь со мной напрямую через",
+  "contacts.not_empty": "Поле не может быть пустым",
+  "contacts.incorrect_email": "Введен некоррекный Email"
 }

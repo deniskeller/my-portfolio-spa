@@ -1,0 +1,83 @@
+.BaseTextarea {
+  position: relative;
+  padding-top: 30px;
+}
+
+.Textarea {
+  font-size: em(16px);
+  width: 100%;
+  height: em(100px);
+  max-width: inherit;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+  &:focus ~ label,
+  &:valid ~ label {
+    top: 0;
+    font-size: em(14px);
+    color: #5264ae;
+  }
+  &:focus ~ .Bar:before,
+  &:focus ~ .Bar:after {
+    width: 50%;
+  }
+}
+
+.Label {
+  color: #999;
+  font-size: em(18px);
+  position: absolute;
+  pointer-events: none;
+  top: 20px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.Bar {
+  position: relative;
+  display: block;
+  &:before,
+  &:after {
+    content: '';
+    height: em(2px);
+    width: 0px;
+    bottom: 0px;
+    position: absolute;
+    background: #5264ae;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  &:before {
+    left: 50%;
+  }
+  &:after {
+    right: 50%;
+  }
+}
+
+.Textarea:focus ~ .Bar:before,
+.Textarea:focus ~ .Bar:after {
+  width: 50%;
+}
+
+.Error {
+  border-color: $red;
+}
+
+.ErrorText {
+  font-size: em(16px);
+  line-height: 120%;
+  color: $red;
+  position: absolute;
+  right: 0;
+  bottom: em(-20px);
+}

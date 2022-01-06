@@ -1,3 +1,8 @@
 {
-  "contacts.title": "Contacts"
+  "contacts.question": "Need a website? write me",
+  "contacts.name": "Name",
+  "contacts.btn_title": "Send",
+  "contacts.contact_me": "Or contact me directly via",
+  "contacts.not_empty": "The field cannot be empty",
+  "contacts.incorrect_email": "Incorrect Email entered"
 }
