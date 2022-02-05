@@ -7,6 +7,7 @@ import {
   BaseInput,
   BaseTextarea,
 } from '@base/index';
+import { createDataForm } from 'services/api';
 
 interface Props {}
 
@@ -105,14 +106,18 @@ const Contacts: React.FC<Props> = () => {
   const submitHandler = (e: React.SyntheticEvent) => {
     e.preventDefault();
 
-    const data = new FormData();
+    // const data = new FormData();
 
-    const obj = {
+    const data = {
       email: email,
       name: name,
       text: text,
     };
-    console.log('obj: ', obj);
+    // data.append('email', email);
+    // data.append('name', name);
+    // data.append('text', text);
+
+    createDataForm(data);
     clear();
     alert('Заявка успешно отправлена...');
   };
@@ -120,7 +125,7 @@ const Contacts: React.FC<Props> = () => {
   return (
     <BaseContainer>
       <h1 className={styles.Title}>{t('contacts.question')}</h1>
-      <div className={styles.Form}>
+      <form className={styles.Form}>
         <div className={styles.Form__inputs}>
           <BaseInput
             value={name}
@@ -169,7 +174,32 @@ const Contacts: React.FC<Props> = () => {
             {t('contacts.btn_title')}
           </BaseButton>
         </div>
-      </div>
+      </form>
+
+      <form action='' method='post'>
+        <ul className='inputs'>
+          <li>
+            <label htmlFor='from'>From</label>
+            <input type='text' id='from' name='from' />
+          </li>
+          <li>
+            <label htmlFor='to'>To</label>
+            <input type='text' id='to' name='to' />
+          </li>
+          <li>
+            <label htmlFor='date'>Date</label>
+            <input type='date' id='date' name='date' />
+          </li>
+          <li>
+            <label htmlFor='time'>Time</label>
+            <input type='time' id='time' name='time' />
+          </li>
+          <li>
+            <button>Request</button>
+          </li>
+        </ul>
+      </form>
+
       <h1 className={styles.Title}>
         {t('contacts.contact_me')}&nbsp;
         <a
