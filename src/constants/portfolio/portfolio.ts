@@ -326,7 +326,7 @@ export const portfolioWorks = [
       en: 'Layout',
       ru: 'Верстка',
     },
-    technologies: ['HTML5/CSS3', 'React.js/Next.js', 'TinaCMS'],
+    technologies: ['HTML5/CSS3', 'React.js/Next.js', 'Typescript', 'TinaCMS'],
     images: [
       '/images/portfolio/esoque/esoque1.png',
       '/images/portfolio/esoque/esoque2.png',
