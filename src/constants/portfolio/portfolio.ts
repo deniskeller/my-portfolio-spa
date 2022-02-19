@@ -319,14 +319,14 @@ export const portfolioWorks = [
     id: 15,
     title: 'Esoque',
     description: {
-      en: '',
-      ru: '',
+      en: 'Esoque',
+      ru: 'Esoque',
     },
     scope_of_work: {
       en: 'Layout',
       ru: 'Верстка',
     },
-    technologies: ['HTML5/CSS3', 'React Js / Next Js / TinaCMS'],
+    technologies: ['HTML5/CSS3', 'React.js/Next.js', 'TinaCMS'],
     images: [
       '/images/portfolio/esoque/esoque1.png',
       '/images/portfolio/esoque/esoque2.png',
