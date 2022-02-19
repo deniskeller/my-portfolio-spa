@@ -10,6 +10,7 @@ export const technologies = {
     'ReactJS',
     'NextJS',
     'Redux',
+    'Redux Toolkit',
     'Git',
     'Webpack',
     'Photoshop / Figma / Zeplin',
