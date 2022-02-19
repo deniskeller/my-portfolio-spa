@@ -20,6 +20,7 @@ export const technologies = {
     'ExpressJS',
     'MongoDB',
     'Firebase',
+    'React Native',
     'Jest / React-testing-library',
     'Atlassian Jira / Dropbox / Clickup',
   ],
