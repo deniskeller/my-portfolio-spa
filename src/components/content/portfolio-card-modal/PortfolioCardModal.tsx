@@ -133,7 +133,7 @@ const PortfolioCardModal: React.FC<Props> = ({ className }) => {
               />
             </a>
             <a
-              href={work.view.github}
+              href={`${work.view.github == 'nda' ? '/nda' : work.view.github}`}
               target='_blank'
               className={styles.SocialItem}
               rel='noopener noreferrer'
