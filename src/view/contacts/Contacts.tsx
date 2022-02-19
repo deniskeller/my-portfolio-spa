@@ -176,7 +176,7 @@ const Contacts: React.FC<Props> = () => {
         </div>
       </form>
 
-      <form action='' method='post'>
+      {/* <form action='' method='post'>
         <ul className='inputs'>
           <li>
             <label htmlFor='from'>From</label>
@@ -198,7 +198,7 @@ const Contacts: React.FC<Props> = () => {
             <button>Request</button>
           </li>
         </ul>
-      </form>
+      </form> */}
 
       <h1 className={styles.Title}>
         {t('contacts.contact_me')}&nbsp;
