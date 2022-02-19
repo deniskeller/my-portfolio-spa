@@ -315,4 +315,26 @@ export const portfolioWorks = [
       github: 'https://github.com/deniskeller/my_portfolio',
     },
   },
+  {
+    id: 15,
+    title: 'Esoque',
+    description: {
+      en: '',
+      ru: '',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/CSS3', 'React Js / Next Js / TinaCMS'],
+    images: [
+      '/images/portfolio/esoque/esoque1.png',
+      '/images/portfolio/esoque/esoque2.png',
+      '/images/portfolio/esoque/esoque3.png',
+    ],
+    view: {
+      website: 'https://esoque.vercel.app/',
+      github: 'nda',
+    },
+  },
 ];
