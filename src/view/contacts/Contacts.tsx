@@ -129,11 +129,11 @@ const Contacts: React.FC<Props> = () => {
         <div className={styles.Form__inputs}>
           <BaseInput
             value={name}
-            name='name'
+            name="name"
             onChange={changeHandlerName}
             onBlur={blurHandler}
             placeholder={t('contacts.name')}
-            type='text'
+            type="text"
             required
             error={nameDirty && nameError}
             className={styles.Input}
@@ -141,11 +141,11 @@ const Contacts: React.FC<Props> = () => {
 
           <BaseInput
             value={email}
-            name='email'
+            name="email"
             onChange={changeHandlerEmail}
             onBlur={blurHandler}
-            placeholder='Email'
-            type='text'
+            placeholder="Email"
+            type="text"
             required
             error={emailDirty && emailError}
             className={styles.Input}
@@ -155,18 +155,18 @@ const Contacts: React.FC<Props> = () => {
           cols={50}
           rows={4}
           value={text}
-          name='text'
+          name="text"
           onChange={changeHandlerTextarea}
           onBlur={blurHandler}
-          placeholder='Message'
+          placeholder="Message"
           required
           error={textDirty && textError}
           className={styles.Textarea}
         />
 
-        <div className='form-row-icon'>
+        <div className="form-row-icon">
           <BaseButton
-            type='primary'
+            type="primary"
             disabled={!disabled}
             onClick={submitHandler}
             className={styles.Button}
@@ -203,9 +203,9 @@ const Contacts: React.FC<Props> = () => {
       <h1 className={styles.Title}>
         {t('contacts.contact_me')}&nbsp;
         <a
-          href='https://telegram.me/denisb163'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://telegram.me/contacts.contact_me"
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles.Telegram}
         >
           Telegram
