@@ -203,7 +203,7 @@ const Contacts: React.FC<Props> = () => {
       <h1 className={styles.Title}>
         {t('contacts.contact_me')}&nbsp;
         <a
-          href="https://telegram.me/contacts.contact_me"
+          href="https://t.me/dkfront"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.Telegram}
