@@ -1,42 +1,41 @@
 // .Form {
 // }
-
 .Form__inputs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1.3333333333em;
-  margin-bottom: 30px;
-  @include ifmobile {
-    grid-template-columns: 1fr;
-    // grid-gap: 1.3333333333em;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.3333333333em;
+    margin-bottom: 30px;
+    @include ifmobile {
+        grid-template-columns: 1fr;
+        // grid-gap: 1.3333333333em;
+    }
 }
 
 .Input {
-  @include ifmobile {
-    margin-bottom: em(20px);
-  }
+    @include ifmobile {
+        margin-bottom: em(20px);
+    }
 }
 
 .Textarea {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
 }
 
 .Title {
-  font-size: em(32px);
-  line-height: 120%;
-  margin-bottom: 30px;
+    font-size: em(32px);
+    line-height: 120%;
+    margin-bottom: 30px;
 }
 
 .Button {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .Telegram {
-  color: #0088cc;
-  &:hover {
-    text-decoration: underline;
-  }
+    color: #0088cc;
+    &:hover {
+        text-decoration: underline;
+    }
 }

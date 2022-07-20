@@ -11,7 +11,7 @@ const Home: React.FC<Props> = () => {
   const { t } = useTranslation('home');
 
   return (
-    <BaseContainer contentCenter='contentCenter'>
+    <BaseContainer contentCenter="contentCenter">
       <div className={styles.Content}>
         <div className={styles.Photo} />
 
@@ -21,49 +21,49 @@ const Home: React.FC<Props> = () => {
 
           <div className={styles.Social}>
             <a
-              rel='noopener noreferrer'
+              rel="noopener noreferrer"
               target={'_blank'}
-              href='https://www.instagram.com/keller.js/'
+              href="https://www.instagram.com/keller.js/"
             >
               <BaseIcon
                 icon={ALL_ICONS.INSTAGRAM}
-                viewBox='0 0 30 30'
+                viewBox="0 0 30 30"
                 className={styles.Social__icon}
               />
             </a>
 
             <a
-              rel='noopener noreferrer'
+              rel="noopener noreferrer"
               target={'_blank'}
-              href='https://vk.com/id14286270'
+              href="https://vk.com/id14286270"
             >
               <BaseIcon
                 icon={ALL_ICONS.VK}
-                viewBox='0 0 35 25'
+                viewBox="0 0 35 25"
                 className={`${styles.Social__icon} ${styles.Social__icon__vk}`}
               />
             </a>
 
             <a
-              rel='noopener noreferrer'
+              rel="noopener noreferrer"
               target={'_blank'}
-              href='https://github.com/deniskeller'
+              href="https://github.com/deniskeller"
             >
               <BaseIcon
                 icon={ALL_ICONS.GITHUB}
-                viewBox='0 0 30 30'
+                viewBox="0 0 30 30"
                 className={styles.Social__icon}
               />
             </a>
 
             <a
-              rel='noopener noreferrer'
+              rel="noopener noreferrer"
               target={'_blank'}
-              href='https://www.linkedin.com/in/denis-keller-8248691b1/'
+              href="https://www.linkedin.com/in/denis-keller-8248691b1/"
             >
               <BaseIcon
                 icon={ALL_ICONS.LINKEDIN}
-                viewBox='0 0 30 30'
+                viewBox="0 0 30 30"
                 className={`${styles.Social__icon} ${styles.Social__icon__linkedin}`}
               />
             </a>

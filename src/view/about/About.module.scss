@@ -1,35 +1,35 @@
 .Description {
-  font-size: em(16px);
-  color: $grey;
-  padding-bottom: em(40px);
+    font-size: em(16px);
+    color: $grey;
+    padding-bottom: em(40px);
 }
 
 .Skills__title {
-  text-transform: uppercase;
-  font-size: em(16px);
+    text-transform: uppercase;
+    font-size: em(16px);
 }
 
 .Skills__subtitle {
-  font-size: em(16px);
+    font-size: em(16px);
 }
 
 .Skills {
-  margin-bottom: em(80px);
+    margin-bottom: em(80px);
 }
 
 .Skills__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  @include ifmobile {
-    grid-template-columns: 1fr;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include ifmobile {
+        grid-template-columns: 1fr;
+    }
 }
 
 .Skills__list {
-  padding-left: em(20px);
-  color: $grey;
+    padding-left: em(20px);
+    color: $grey;
 }
 
 .Skills__item {
-  font-size: em(16px);
+    font-size: em(16px);
 }

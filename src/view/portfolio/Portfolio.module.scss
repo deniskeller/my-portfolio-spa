@@ -1,17 +1,17 @@
 .Portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: em(20px);
-  @include ifmobile {
-    grid-template-columns: 1fr;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: em(20px);
+    @include ifmobile {
+        grid-template-columns: 1fr;
+    }
 }
 
 .Error,
 .Loading {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

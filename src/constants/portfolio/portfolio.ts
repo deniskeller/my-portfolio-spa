@@ -337,4 +337,27 @@ export const portfolioWorks = [
       github: 'nda',
     },
   },
+
+	{
+    id: 16,
+    title: 'DK Library',
+    description: {
+      en: 'My custom components lIbrary',
+      ru: 'Моя библиотека пользовательских компонентов',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/mylibrary/mylibrary1.png',
+      '/images/portfolio/mylibrary/mylibrary2.png',
+      '/images/portfolio/mylibrary/mylibrary3.png',
+    ],
+    view: {
+      website: 'https://my-custom-components-library.vercel.app/',
+      github: 'https://github.com/deniskeller/my-custom-components-library',
+    },
+  },
 ];
