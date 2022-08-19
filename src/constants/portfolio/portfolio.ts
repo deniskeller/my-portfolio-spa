@@ -360,4 +360,28 @@ export const portfolioWorks = [
       github: 'https://github.com/deniskeller/my-custom-components-library',
     },
   },
+
+	{
+    id: 1,
+    title: 'Aqatin',
+    description: {
+      en: 'Financial Services for Athletes',
+      ru: 'Финансовые услуги для спортсменов',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/aqatin/aqatin1.png',
+      '/images/portfolio/aqatin/aqatin2.png',
+      '/images/portfolio/aqatin/aqatin3.png',
+      '/images/portfolio/aqatin/aqatin4.png',
+    ],
+    view: {
+      website: 'https://aqatin.vercel.app/',
+      github: 'nda',
+    },
+  },
 ];
