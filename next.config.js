@@ -9,5 +9,4 @@ module.exports = withImages({
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/assets/scss')],
     prependData: `@import "main.scss";`,
-  },
-});
+  },});

@@ -3,14 +3,30 @@
     "target": "es5",
     "baseUrl": "src",
     "paths": {
-      "@layouts/*": ["components/layouts/*"],
-      "@base/*": ["components/base/*"],
-      "@nav/*": ["components/nav/*"],
-      "@constants/*": ["constants/*"],
-      "@view/*": ["view/*"],
-      "@content/*": ["components/content/*"]
+      "@layouts/*": [
+        "components/layouts/*"
+      ],
+      "@base/*": [
+        "components/base/*"
+      ],
+      "@nav/*": [
+        "components/nav/*"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@view/*": [
+        "view/*"
+      ],
+      "@content/*": [
+        "components/content/*"
+      ]
     },
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,7 +37,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
@@ -30,5 +47,7 @@
     "pages/_document.js",
     "pages/api/index.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
