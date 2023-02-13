@@ -401,7 +401,6 @@ export const portfolioWorks = [
       '/images/portfolio/aqatin/aqatin1.png',
       '/images/portfolio/aqatin/aqatin2.png',
       '/images/portfolio/aqatin/aqatin3.png',
-      '/images/portfolio/aqatin/aqatin4.png',
     ],
     view: {
       website: 'https://manhattan-nine.vercel.app/',
