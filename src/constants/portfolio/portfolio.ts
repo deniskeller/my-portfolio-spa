@@ -384,4 +384,28 @@ export const portfolioWorks = [
       github: 'nda',
     },
   },
+
+	{
+    id: 18,
+    title: 'Manhattan',
+    description: {
+      en: 'Financial Services for Athletes',
+      ru: 'Финансовые услуги для спортсменов',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/aqatin/aqatin1.png',
+      '/images/portfolio/aqatin/aqatin2.png',
+      '/images/portfolio/aqatin/aqatin3.png',
+      '/images/portfolio/aqatin/aqatin4.png',
+    ],
+    view: {
+      website: 'https://manhattan-nine.vercel.app/',
+      github: 'nda',
+    },
+  },
 ];
