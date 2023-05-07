@@ -1,9 +1,9 @@
 import React from 'react';
-import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { BaseContainer, BaseIcon } from '@base/index';
 import { ALL_ICONS } from '@constants/icons';
 import styles from './Home.module.scss';
+import { useTranslation } from 'next-i18next';
 
 interface Props {}
 

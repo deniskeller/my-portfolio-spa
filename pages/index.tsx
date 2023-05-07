@@ -3,7 +3,6 @@ import React from 'react';
 
 import { Default } from '@layouts/index';
 import { Home } from '@view/index';
-
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const HomePage: React.FC = () => (
