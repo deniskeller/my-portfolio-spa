@@ -15,12 +15,13 @@ const NavbarLink: React.FC<Props> = ({ href, title, index }) => {
   const { t } = useTranslation('common');
 
   return (
-    <li key={index} className={styles.li}>
-      <Link href={href}>
-        <a className={router.pathname === href ? styles.active : ''}>
-          {t(`${'menu.' + title}`)}
-        </a>
-      </Link>
+    <li
+      key={index}
+      className={`${router.pathname === href ? styles.active : ''} ${
+        styles.li
+      }`}
+    >
+      <Link href={href}>{t(`${'menu.' + title}`)}</Link>
     </li>
   );
 };
