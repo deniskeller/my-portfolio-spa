@@ -208,7 +208,7 @@ const Contacts: React.FC<Props> = () => {
           rel="noopener noreferrer"
           className={styles.Telegram}
         >
-          Telegram
+          Telegram1
         </a>
       </h1>
     </BaseContainer>
