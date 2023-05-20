@@ -333,7 +333,7 @@ export const portfolioWorks = [
       '/images/portfolio/esoque/esoque3.png',
     ],
     view: {
-      website: 'https://esoque.vercel.app/',
+      website: 'https://esoque.com/',
       github: 'nda',
     },
   },
@@ -389,8 +389,8 @@ export const portfolioWorks = [
     id: 18,
     title: 'Manhattan',
     description: {
-      en: 'Financial Services for Athletes',
-      ru: 'Финансовые услуги для спортсменов',
+      en: 'Business Solutions',
+      ru: 'Бизнес решения',
     },
     scope_of_work: {
       en: 'Layout',
@@ -398,13 +398,13 @@ export const portfolioWorks = [
     },
     technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
     images: [
-      '/images/portfolio/aqatin/aqatin1.png',
-      '/images/portfolio/aqatin/aqatin2.png',
-      '/images/portfolio/aqatin/aqatin3.png',
-      '/images/portfolio/aqatin/aqatin4.png',
+      '/images/portfolio/manhattan/manhattan1.png',
+      '/images/portfolio/manhattan/manhattan2.png',
+      '/images/portfolio/manhattan/manhattan3.png',
+      '/images/portfolio/manhattan/manhattan4.png',
     ],
     view: {
-      website: 'https://manhattan-nine.vercel.app/',
+      website: 'https://manisland.com/',
       github: 'nda',
     },
   },
@@ -422,13 +422,59 @@ export const portfolioWorks = [
     },
     technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
     images: [
-      '/images/portfolio/aqatin/aqatin1.png',
-      '/images/portfolio/aqatin/aqatin2.png',
-      '/images/portfolio/aqatin/aqatin3.png',
-      '/images/portfolio/aqatin/aqatin4.png',
+      '/images/portfolio/spacefex/spacefex1.png',
+      '/images/portfolio/spacefex/spacefex2.png',
+      '/images/portfolio/spacefex/spacefex3.png',
     ],
     view: {
       website: 'https://spacefex.vercel.app/',
+      github: 'nda',
+    },
+  },
+
+	{
+    id: 20,
+    title: 'Doqins',
+    description: {
+      en: 'WELCOME TO DOQINS & PARTNERS FAMILY OFFICE THE FINANCIAL EXPERTS SINCE 2005',
+      ru: 'DOQINS & PARTNERS FAMILY OFFICE ФИНАНСОВЫЕ ЭКСПЕРТЫ С 2005 ГОДА',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/doqins/doqins-1.png',
+      '/images/portfolio/doqins/doqins-2.png',
+      '/images/portfolio/doqins/doqins-3.png',
+      '/images/portfolio/doqins/doqins-4.png',
+    ],
+    view: {
+      website: 'https://dogins.vercel.app/',
+      github: 'nda',
+    },
+  },
+
+	{
+    id: 21,
+    title: 'IT-Проекты Калининграда',
+    description: {
+      en: 'IT Projects in Kaliningrad',
+      ru: 'IT-Проекты Калининграда',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/kd-projects/kd-projects1.png',
+      '/images/portfolio/kd-projects/kd-projects2.png',
+      '/images/portfolio/kd-projects/kd-projects3.png',
+    ],
+    view: {
+      website: 'https://kd-projects.vercel.app/',
       github: 'nda',
     },
   },
