@@ -478,4 +478,118 @@ export const portfolioWorks = [
       github: 'nda',
     },
   },
+
+	{
+    id: 22,
+    title: 'BLVC car concierge',
+    description: {
+      en: 'CRM',
+      ru: 'CRM',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/blvc/blvc_1.png',
+      '/images/portfolio/blvc/blvc_2.png',
+      '/images/portfolio/blvc/blvc_3.png',
+    ],
+    view: {
+      website: 'https://blvc.vercel.app/dashboard/vehicles',
+      github: 'nda',
+    },
+  },
+
+	{
+    id: 23,
+    title: 'Azure Processing',
+    description: {
+      en: 'Azure Processing is professional Agent with many years of experience made to solicit merchants for an acquiring banks or payment service providers under their name.',
+      ru: 'Azure Processing — это профессиональный агент с многолетним опытом привлечения продавцов к банкам-эквайерам или поставщикам платежных услуг под своим именем.',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка и фронтенд',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/azure/azure_1.png',
+      '/images/portfolio/azure/azure_2.png',
+      '/images/portfolio/azure/azure_3.png',
+    ],
+    view: {
+      website: 'https://azure-processing.vercel.app/',
+      github: 'nda',
+    },
+  },
+
+	{
+    id: 24,
+    title: 'Softwarex',
+    description: {
+      en: 'Custom software development & IT consulting services',
+      ru: 'Разработка программного обеспечения на заказ и ИТ-консалтинговые услуги',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/softwarex/softwarex_1.png',
+      '/images/portfolio/softwarex/softwarex_2.png',
+      '/images/portfolio/softwarex/softwarex_3.png',
+    ],
+    view: {
+      website: 'https://softwarex.vercel.app/',
+      github: 'nda',
+    },
+  },
+
+	{
+    id: 25,
+    title: 'Darvin jewelry',
+    description: {
+      en: 'DARVIN-jewelry brand',
+      ru: 'DARVIN-ювелирный бренд',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/darvin/darvin_1.png',
+      '/images/portfolio/darvin/darvin_2.png',
+    ],
+    view: {
+      website: 'https://darvin-jewelry.vercel.app/',
+      github: 'nda',
+    },
+  },
+
+	{
+    id: 26,
+    title: 'Cloud Ladz',
+    description: {
+      en: 'Professional merchant agents and sales affiliates.',
+      ru: 'Профессиональные торговые агенты и торговые партнеры.',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/cloud-ladz/cloud-ladz_1.png',
+      '/images/portfolio/cloud-ladz/cloud-ladz_2.png',
+      '/images/portfolio/cloud-ladz/cloud-ladz_3.png',
+    ],
+    view: {
+      website: 'https://cloud-ladz.vercel.app/',
+      github: 'nda',
+    },
+  },
 ];
