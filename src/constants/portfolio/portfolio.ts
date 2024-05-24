@@ -592,4 +592,27 @@ export const portfolioWorks = [
       github: 'nda',
     },
   },
+
+	{
+    id: 27,
+    title: 'FAQ solution',
+    description: {
+      en: 'Team of professional copywriters',
+      ru: 'Команда профессиональных копирайтеров',
+    },
+    scope_of_work: {
+      en: 'Layout',
+      ru: 'Верстка',
+    },
+    technologies: ['HTML5/SCSS', 'React.js/Next.js', 'Typescript'],
+    images: [
+      '/images/portfolio/faq-solution/faq-solution_1.png',
+      '/images/portfolio/faq-solution/faq-solution_2.png',
+      '/images/portfolio/faq-solution/faq-solution_3.png',
+    ],
+    view: {
+      website: 'https://faq-solution-psi.vercel.app/',
+      github: 'nda',
+    },
+  },
 ];
